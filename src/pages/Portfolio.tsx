@@ -1,4 +1,5 @@
 import { About } from "../components/portfolio/About";
+import { FeaturedProject } from "../components/portfolio/FeaturedProject";
 import { Hero } from "../components/portfolio/Hero";
 
 export function Portfolio() {
@@ -7,6 +8,7 @@ export function Portfolio() {
       <main className="mx-auto max-w-[680px] px-6 pb-32">
         <Hero />
         <About />
+        <FeaturedProject />
       </main>
     </div>
   );
