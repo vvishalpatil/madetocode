@@ -4,7 +4,9 @@ const focusAreas = ["Frontend", "Design Systems", "Accessibility", "Developer Ex
 
 const stack = [
   { label: "React", className: "bg-[#61DAFB]/10 text-[#61DAFB] border-[#61DAFB]/30" },
-  { label: "TypeScript", className: "bg-[#3178C6]/10 text-[#3178C6] border-[#3178C6]/30" },
+  // Lightened from the #3178C6 brand blue, which only reaches 4.05:1 on this
+  // dark background and fails WCAG AA for 12px text.
+  { label: "TypeScript", className: "bg-[#6BA5E7]/10 text-[#6BA5E7] border-[#6BA5E7]/30" },
   { label: "Vite", className: "bg-accent-dim text-accent border-accent-border" },
   { label: "Storybook", className: "bg-[#FF4785]/10 text-[#FF4785] border-[#FF4785]/30" },
   { label: "Vitest", className: "bg-[#6E9F18]/10 text-[#6E9F18] border-[#6E9F18]/30" },
@@ -29,11 +31,15 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-[1100px] gap-10 px-6 py-16 sm:grid-cols-[1.1fr_0.9fr] sm:gap-8 sm:px-10 sm:py-20">
         <div>
-          <p className="font-mono text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            <span className="text-accent">{"<"}</span> VISHAL{" "}
-            <span className="text-accent">PATIL</span>{" "}
-            <span className="text-accent">{"/>"}</span>
-          </p>
+          <h1 className="font-mono text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <span aria-hidden="true" className="text-accent">
+              {"<"}
+            </span>{" "}
+            VISHAL <span className="text-accent">PATIL</span>{" "}
+            <span aria-hidden="true" className="text-accent">
+              {"/>"}
+            </span>
+          </h1>
 
           <div className="mt-5 inline-block rounded border border-accent-border bg-accent-dim px-4 py-2 text-sm font-medium tracking-wide text-white/90">
             Code. Build. Solve. Grow.
@@ -68,7 +74,7 @@ export function Hero() {
               <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
                 Years of experience
               </p>
-              <p className="mt-1 text-xs text-white/40">Building accessible, production UI</p>
+              <p className="mt-1 text-xs text-white/60">Building accessible, production UI</p>
             </div>
           </div>
         </div>
@@ -82,10 +88,11 @@ export function Hero() {
             <span className="text-accent not-italic">Building accessible software.</span>
           </p>
           <img
-            src="/vishal-photo.png"
+            src="/vishal-photo.webp"
             alt="Vishal Patil"
-            width={480}
-            height={640}
+            width={560}
+            height={747}
+            fetchPriority="high"
             className="w-full max-w-[280px] rounded-2xl object-cover shadow-2xl shadow-black/50"
           />
         </div>
