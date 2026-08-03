@@ -88,7 +88,9 @@ export function Tracks() {
                 {card.status}
               </span>
 
-              <div className="mt-4 text-2xl">{card.icon}</div>
+              <div aria-hidden="true" className="mt-4 text-2xl">
+                {card.icon}
+              </div>
               <h3 className="mt-2 text-xl font-semibold">{card.title}</h3>
               <p className="mt-3 text-sm text-text-2">{card.body}</p>
 
