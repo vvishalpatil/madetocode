@@ -30,7 +30,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://youtube.com/@madetocode"
+              href="https://youtube.com/@madetocode7"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-btn bg-text px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"

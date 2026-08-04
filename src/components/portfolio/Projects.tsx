@@ -24,7 +24,7 @@ export function Projects() {
             </p>
             <div className="mt-5 flex flex-wrap gap-6 text-sm">
               <a
-                href="https://youtube.com/@madetocode"
+                href="https://youtube.com/@madetocode7"
                 target="_blank"
                 rel="noreferrer"
                 className="text-accent underline-offset-4 hover:underline"
