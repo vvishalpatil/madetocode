@@ -32,17 +32,10 @@ const companies: Company[] = [
     highlight:
       "Part of the team building PayPal's enterprise Design System — the React component library product teams across the company build their interfaces on.",
     bullets: [
-      "Architect components with **React, TypeScript, and vanilla-extract**, ensuring cross-browser compatibility, multilingual support, and consistent behaviour across devices.",
       "Introduced **compound component architecture** to Modal, Dialog, Card, and Accordion — enabling custom UI composition for consuming teams while maintaining full backward compatibility.",
       "Drive **component API design decisions** — defining prop interfaces and event contracts so components stay predictable for every team that depends on them.",
       "Migrated the library's build tooling to **Vite**, cutting build times and tightening the local feedback loop for the whole team.",
       "Built a **Live Edit Plugin for Storybook**, letting engineers test and validate components in real time without leaving the docs.",
-      "Developed a **test generator agent** that identifies meaningful coverage gaps and writes the tests to close them.",
-      "Extended the design system's **MCP server** to detect newer library versions, letting downstream teams review required changes straight from the changelog.",
-      "Automated the PR workflow end to end — commits, PR creation, stage links, and Slack reviewer notifications — reducing friction on every release.",
-      "Set up **Lerna monorepo versioning**, semantic release, ESLint/Prettier standards, and a Sonar quality gate in CI.",
-      "Improved runtime performance through code-splitting, lazy loading, and caching, and strengthened the library's regression test coverage.",
-      "Collaborate closely with design, **accessibility**, and motion experts on every new component addition.",
     ],
   },
   {
@@ -54,10 +47,7 @@ const companies: Company[] = [
       "Delivered a customer-facing Loyalty Program journey from scratch to production, and led a legacy banking platform's migration to React.",
     bullets: [
       "Built the **end-to-end frontend for a Loyalty Program Journey** — enabling users to link or join third-party loyalty cards to their bank payment card — shipped to production with direct client recognition.",
-      "Part of the team that migrated a legacy **Business Payments platform** to a modern React stack — extracting reusable components, restructuring routing with React Router, and implementing Redux for state management.",
-      "Developed and tested UI components with **React, Jest, and React Testing Library**, and set up project structure and Webpack build pipelines across both projects.",
-      "Aligned with backend and design teams on **Swagger/OpenAPI contracts** and authored API mapping documentation for the team.",
-      "Identified and resolved UI performance and design consistency issues through code and design reviews across sprint cycles.",
+      "Part of the team that migrated a legacy **Business Payments platform** to a modern React stack — extracting reusable components, restructuring routing, and introducing Redux for state management.",
     ],
   },
   {
@@ -68,8 +58,7 @@ const companies: Company[] = [
     highlight:
       "Built frontend modules for an investment analytics platform used to track and compare portfolio performance.",
     bullets: [
-      "Developed the **User Dashboard, Portfolio Creation Board, and Best Performing Portfolios Board** in React.js.",
-      "Built **data visualisation features** to display portfolio performance, and handled REST API integration for fetching and mapping financial data to the UI.",
+      "Built the **user dashboard, portfolio creation board, and performance comparison views** in React, including the data visualisation layer for portfolio performance.",
     ],
   },
 ];

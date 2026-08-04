@@ -21,11 +21,6 @@ const cards = [
   },
 ];
 
-const earlier = [
-  { prize: "1st Prize", event: "Web Designing Competition, Converges (RCPIT)" },
-  { prize: "3rd Prize", event: "Programming Competition, Converges (RCPIT)" },
-];
-
 export function Recognition() {
   return (
     <Reveal className="mt-16 sm:mt-20">
@@ -61,14 +56,6 @@ export function Recognition() {
           ))}
         </div>
 
-        <div className="mt-6 flex flex-col gap-4 rounded-card border border-border bg-surface px-6 py-5 sm:flex-row sm:flex-wrap sm:items-center">
-          <p className="text-[11px] font-bold uppercase tracking-[1.5px] text-text-3">Earlier</p>
-          {earlier.map((item) => (
-            <p key={item.event} className="text-sm text-text-2">
-              <strong className="text-text">{item.prize}</strong> — {item.event}
-            </p>
-          ))}
-        </div>
       </section>
     </Reveal>
   );
