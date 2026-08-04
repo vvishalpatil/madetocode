@@ -1,15 +1,15 @@
 import { GitHubIcon, MailIcon } from "../icons";
 
-const focusAreas = ["Frontend", "Design Systems", "Accessibility", "Developer Experience"];
+const focusAreas = ["Product Engineering", "Design Systems", "Accessibility", "Performance"];
 
 const stack = [
   { label: "React", className: "bg-[#61DAFB]/10 text-[#61DAFB] border-[#61DAFB]/30" },
   // Lightened from the #3178C6 brand blue, which only reaches 4.05:1 on this
   // dark background and fails WCAG AA for 12px text.
   { label: "TypeScript", className: "bg-[#6BA5E7]/10 text-[#6BA5E7] border-[#6BA5E7]/30" },
-  { label: "Vite", className: "bg-accent-dim text-accent border-accent-border" },
+  { label: "Redux", className: "bg-[#B07EE0]/10 text-[#B07EE0] border-[#B07EE0]/30" },
+  { label: "Node.js", className: "bg-[#7DBE5C]/10 text-[#7DBE5C] border-[#7DBE5C]/30" },
   { label: "Storybook", className: "bg-[#FF4785]/10 text-[#FF4785] border-[#FF4785]/30" },
-  { label: "Vitest", className: "bg-[#6E9F18]/10 text-[#6E9F18] border-[#6E9F18]/30" },
 ];
 
 export function Hero() {
@@ -41,9 +41,14 @@ export function Hero() {
             </span>
           </h1>
 
-          <div className="mt-5 inline-block rounded border border-accent-border bg-accent-dim px-4 py-2 text-sm font-medium tracking-wide text-white/90">
-            Code. Build. Solve. Grow.
-          </div>
+          <p className="mt-4 text-base font-semibold tracking-wide text-accent sm:text-lg">
+            Frontend Engineer · Bengaluru
+          </p>
+
+          <p className="mt-4 max-w-md text-[15px] leading-relaxed text-white/75">
+            I build production web applications — and the design systems and tooling teams build
+            them with.
+          </p>
 
           <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-wide text-white/60 sm:text-sm">
             {focusAreas.map((area, i) => (
@@ -74,7 +79,9 @@ export function Hero() {
               <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
                 Years of experience
               </p>
-              <p className="mt-1 text-xs text-white/60">Building accessible, production UI</p>
+              <p className="mt-1 text-xs text-white/60">
+                Shipping production frontend at scale
+              </p>
             </div>
           </div>
         </div>

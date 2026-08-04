@@ -6,28 +6,29 @@ export function About() {
       <section aria-label="About">
         <div className="space-y-5 text-[16px] leading-relaxed text-text-2">
           <p>
-            I'm a frontend engineer at <strong className="text-text">PayPal</strong>, working on
-            our enterprise Design System — the React component library product teams across the
-            company build their interfaces on. My work sits one layer below product:{" "}
-            <strong className="text-text">
-              component APIs, accessibility, build tooling, and developer experience
-            </strong>
-            .
+            I'm a frontend engineer with six years of experience building{" "}
+            <strong className="text-text">production web applications</strong> — customer-facing
+            product journeys, internal platforms, and the component systems teams build them with.
+            I'm currently at <strong className="text-text">PayPal</strong>, working on our
+            enterprise Design System.
           </p>
           <p>
-            Modal dialogs. Accordions. Cards. Autocomplete.{" "}
-            <strong className="text-text">These aren't practice problems — they're my job.</strong>{" "}
-            I've architected them with compound component patterns, made them accessible,
-            localized them across languages, and kept them backward compatible while every
-            consuming team depends on them shipping without breakage.
+            Before that I shipped product: a loyalty programme journey built end to end for a
+            bank's customers, a legacy payments platform migrated to React, and investment
+            analytics dashboards with the data visualisation behind them.{" "}
+            <strong className="text-text">
+              That product experience is what shapes how I build components now
+            </strong>{" "}
+            — I know what it's like to be the team consuming a design system on a deadline.
           </p>
           <p>
             I care about{" "}
             <strong className="text-text">
-              the trade-offs, edge cases, and API design decisions that only surface at scale
+              the details that decide whether an interface actually holds up
             </strong>{" "}
-            — the versioning strategy, the keyboard interaction nobody tested, the build step that
-            takes ninety seconds too long.
+            — the API that stays intuitive as requirements change, the keyboard interaction nobody
+            tested, the render that drops frames on a mid-range phone, the build step that takes
+            ninety seconds too long.
           </p>
         </div>
       </section>

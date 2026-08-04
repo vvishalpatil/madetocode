@@ -13,8 +13,8 @@ export function Footer() {
         Currently open to interesting problems.
       </h2>
       <p className="mt-3 max-w-lg text-[15px] leading-relaxed text-text-2">
-        If you're working on design systems, component libraries, or anything where the
-        accessibility and API details actually matter — I'd like to hear about it.
+        If you're building something where the frontend details actually matter — interaction,
+        accessibility, performance — I'd like to hear about it.
       </p>
 
       <div className="mt-6 flex flex-wrap gap-3">
