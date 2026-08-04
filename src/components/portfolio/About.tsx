@@ -1,19 +1,12 @@
 import { Reveal } from "../Reveal";
 
-const stats = [
-  { value: "170+", label: "Internal teams using components I build" },
-  { value: "70+", label: "Production React components shipped" },
-  { value: "~6", label: "Years building frontend at scale" },
-  { value: "3", label: "Companies shipping production frontend" },
-];
-
 const timeline = [
   {
     title: "PayPal",
     badge: "Current",
     dot: "bg-accent text-white",
     meta: "Software Engineer 2 · Bengaluru",
-    desc: "Enterprise Design System — 70+ React components, 170+ consuming teams. Compound component architecture, a11y, i18n.",
+    desc: "Enterprise Design System — component architecture, accessibility, internationalisation, and the build tooling the library ships on.",
   },
   {
     title: "Publicis Sapient",
@@ -44,35 +37,29 @@ export function About() {
       <section aria-label="About">
         <div className="space-y-5 text-[16px] leading-relaxed text-text-2">
           <p>
-            I'm a frontend engineer at <strong className="text-text">PayPal</strong> with{" "}
-            <strong className="text-text">~6 years of experience</strong>. I work on PayPal's
-            enterprise Design System: a library of{" "}
-            <strong className="text-text">70+ production React components</strong> consumed by{" "}
-            <strong className="text-text">170+ internal teams</strong> across the company.
+            I'm a frontend engineer at <strong className="text-text">PayPal</strong>, working on
+            our enterprise Design System — the React component library product teams across the
+            company build their interfaces on. My work sits one layer below product:{" "}
+            <strong className="text-text">
+              component APIs, accessibility, build tooling, and developer experience
+            </strong>
+            .
           </p>
           <p>
             Modal dialogs. Accordions. Cards. Autocomplete.{" "}
             <strong className="text-text">These aren't practice problems — they're my job.</strong>{" "}
             I've architected them with compound component patterns, made them accessible,
-            localized them across languages, and maintained backward compatibility while 170+
-            teams depend on them.
+            localized them across languages, and kept them backward compatible while every
+            consuming team depends on them shipping without breakage.
           </p>
           <p>
             I care about{" "}
             <strong className="text-text">
-              the trade-offs, edge cases, and API design decisions that actually matter at scale
+              the trade-offs, edge cases, and API design decisions that only surface at scale
             </strong>{" "}
-            — not the clean solution you'd find in a tutorial.
+            — the versioning strategy, the keyboard interaction nobody tested, the build step that
+            takes ninety seconds too long.
           </p>
-        </div>
-
-        <div className="mt-8 grid grid-cols-2 gap-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className="rounded-card border border-border bg-surface p-5">
-              <div className="text-[30px] font-bold text-accent">{stat.value}</div>
-              <div className="mt-1 text-sm text-text-2">{stat.label}</div>
-            </div>
-          ))}
         </div>
 
         <div className="mt-8 rounded-card border border-border bg-surface p-7">

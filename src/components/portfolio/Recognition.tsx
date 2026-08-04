@@ -4,7 +4,7 @@ const cards = [
   {
     icon: "🤖",
     title: "Recognized by the team for the test generator agent",
-    desc: "Built an agent that identifies coverage gaps and writes meaningful tests — raising test coverage from 71% to 90% within two days.",
+    desc: "Built an agent that identifies meaningful coverage gaps across the library and writes the tests to close them.",
     org: "PayPal",
   },
   {
