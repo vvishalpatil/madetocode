@@ -1,13 +1,24 @@
-import { Route, Routes } from "react-router-dom";
-import { Landing } from "./pages/Landing";
-import { Portfolio } from "./pages/Portfolio";
+import { About } from "./components/About";
+import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { Nav } from "./components/Nav";
+import { Topics } from "./components/Topics";
+import { Tracks } from "./components/Tracks";
+import { Waitlist } from "./components/Waitlist";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/vishal-patil5" element={<Portfolio />} />
-    </Routes>
+    <div className="bg-bg text-text">
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Tracks />
+        <Topics />
+        <Waitlist />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
