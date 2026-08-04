@@ -41,12 +41,6 @@ export function Projects() {
               </a>
             </div>
           </div>
-
-          <div className="flex items-center justify-center rounded-card border border-dashed border-border bg-surface p-12 text-center">
-            <span className="rounded-pill border border-border bg-bg px-4 py-1.5 text-sm text-text-2">
-              More coming soon
-            </span>
-          </div>
         </div>
       </section>
     </Reveal>

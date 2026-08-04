@@ -5,7 +5,9 @@ import { Hero } from "../components/portfolio/Hero";
 import { Projects } from "../components/portfolio/Projects";
 import { Recognition } from "../components/portfolio/Recognition";
 import { StackStrip } from "../components/portfolio/StackStrip";
-import { Writing } from "../components/portfolio/Writing";
+// Writing is built but has no posts yet — an empty "coming soon" section reads
+// as unfinished on a hiring page. Re-enable once there is a first article.
+// import { Writing } from "../components/portfolio/Writing";
 
 export function Portfolio() {
   return (
@@ -17,7 +19,7 @@ export function Portfolio() {
           <Projects />
           <Experience />
           <Recognition />
-          <Writing />
+          {/* <Writing /> */}
           <StackStrip />
         </main>
         <Footer />
