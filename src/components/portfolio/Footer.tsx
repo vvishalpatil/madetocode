@@ -29,13 +29,14 @@ export function Footer() {
             {label}
           </a>
         ))}
-        {/* Re-enable once public/resume.pdf exists — currently a 404. */}
-        {/* <a
-          href="/resume.pdf"
+        <a
+          href="/Vishal_Patil_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-pill border border-border px-4 py-2 text-sm text-text-2 transition-colors hover:border-accent-border hover:bg-accent-dim hover:text-text"
         >
           Résumé
-        </a> */}
+        </a>
       </div>
 
       <p className="mt-10 text-xs text-text-3">© 2026 Vishal Patil</p>
