@@ -1,7 +1,7 @@
 import { InstagramIcon, LinkedInIcon, YouTubeIcon } from "./icons";
 
 const socials = [
-  { label: "YouTube", href: "https://youtube.com/@madetocode", Icon: YouTubeIcon },
+  { label: "YouTube", href: "https://youtube.com/@madetocode7", Icon: YouTubeIcon },
   { label: "Instagram", href: "https://instagram.com/madetocode", Icon: InstagramIcon },
   { label: "LinkedIn", href: "https://linkedin.com/in/vishalpatil", Icon: LinkedInIcon },
 ];
